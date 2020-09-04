@@ -1,0 +1,154 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+ 
+  <style>
+ 
+
+  body{
+            font-family: tahoma;
+        }
+label{
+  font-size: 30px;
+}
+input[type=text]::placeholder{
+  font-size: 32px;
+  color:black;
+
+}
+input[type=text] {
+  box-sizing: border-box;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 30px;
+  background-color:white;
+  padding: 30px 20px 30px 12px;
+  text-align:left;
+  color:black;
+  width: 90%;
+  height:80%;
+  outline:none;
+}
+.button {
+  /*#4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 40px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 0px;
+  cursor: pointer;
+  outline: none;
+    width: 92%;
+}
+.button4 {
+   background-color: black;
+   color: white;
+   } /* Gray */
+
+.searchbar{
+  margin-top: 2%;
+}
+.from1{
+  margin-top:3%;
+  padding:10px 10px 10px 10px;
+  margin-left:10px;
+  margin-right:10px;
+
+}
+
+#jobexperiance{
+  width: 90%;
+  height:90px;
+  background-color:white;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 25px;
+  outline:none;
+}
+
+#tec{
+  width: 90%;
+  height:90px;
+  background-color:white;
+  border: 3px solid black;
+  border-radius: 5px;
+  font-size: 25px;
+  outline:none;
+}
+.page2{
+  margin-left:10%;
+}
+
+
+</style>
+</head>
+<body>
+<div class="searchbar">
+<form align=left class="from1">
+  <div  class="page2">
+  <label  for="jobexperiance"><h1>SELECT CLASS</h1></n>
+  <select   name="jobexperiance" id="jobexperiance">
+      <option value="Class 8">Class 8</option>
+      <option value="Class 9">Class 9</option>
+  </select>
+</label>
+  <br><br><br>
+  <br><br><br>
+
+  <label  for="jobexperiance"><h1>TEACHER OR STUDENT</h1></n>
+    <select name="jobexperiance" id="tec">
+        <option value="1">Teacher</option>
+        <option value="2">Student</option>
+    </select>
+  </label>
+    <br><br><br>
+    <br><br><br>
+
+  
+  <label for="location"><h2>USERNAME</h2></n>
+  <input type="text" name="username" placeholder="Username">
+</label>
+<br><br><br><br><br><br>
+
+<label for="location"><h2>PASSWORD </h2></n>
+  <input type="text" name="password" placeholder="Password">
+</label>
+
+<br><br><br>
+  <br><br><br>
+  <br><br><br>
+</div>
+
+
+
+</form>
+
+</div>
+<button style="margin-left:5%"; class="button button4" onclick="mylink()" >LOGIN</button>
+<script>
+  
+
+  function mylink() {
+ 
+
+  if(document.getElementById("tec").selectedIndex==0)
+  {
+    location.href="https://us04web.zoom.us/meeting/71728331276?_x_zm_rtaid=yB6ZeJAxTSi5zOsrgV_B6A.1599216034241.8385b4a910d0dfcfde682e3ac67c1854&_x_zm_rhtaid=403#";
+  }
+  else{
+    location.href="https://zoom.us/join";
+
+
+  }
+}
+</script>
+
+
+
+</body>
+</html>
